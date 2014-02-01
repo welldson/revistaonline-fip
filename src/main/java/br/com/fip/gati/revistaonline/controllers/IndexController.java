@@ -1,4 +1,4 @@
-package br.com.fip.gati.revistaonline;
+package br.com.fip.gati.revistaonline.controllers;
 
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Resource;
