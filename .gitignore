@@ -10,11 +10,11 @@ target
 *.ear
 
 # Eclipse Files #
-.classpath
-.project
-.settings*
 /target
 nb-configuration.xml
 
 # Other Editors #
 *~
+
+#Mac OS Finder
+.DS_Store
