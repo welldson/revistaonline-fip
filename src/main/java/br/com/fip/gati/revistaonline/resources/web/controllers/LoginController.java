@@ -1,10 +1,10 @@
-package br.com.fip.gati.revistaonline.controllers;
+package br.com.fip.gati.revistaonline.resources.web.controllers;
 
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
-import br.com.fip.gati.revistaonline.model.Usuario;
+import br.com.fip.gati.revistaonline.domain.model.Usuario;
 
 
 @Resource

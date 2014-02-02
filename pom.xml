@@ -35,11 +35,19 @@
 		</dependency>
 
 		<dependency>
-			<groupId>br.com.caelum.vraptor</groupId>
-			<artifactId>vraptor-i18n</artifactId>
-			<version>1.0.5</version>
-			<scope>compile</scope>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-c3p0</artifactId>
+			<version>4.3.0.Final</version>
 		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.6</version>
+		</dependency>
+
+		<!--<dependency> <groupId>br.com.caelum.vraptor</groupId> <artifactId>vraptor-i18n</artifactId> 
+			<version>1.0.5</version> <scope>compile</scope> </dependency> -->
 
 	</dependencies>
 	<build>

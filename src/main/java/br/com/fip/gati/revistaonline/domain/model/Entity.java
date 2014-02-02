@@ -1,9 +1,8 @@
-package br.com.fip.gati.revistaonline.model;
+package br.com.fip.gati.revistaonline.domain.model;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
-import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 
 @MappedSuperclass
