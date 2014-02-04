@@ -1,4 +1,4 @@
-package br.com.fip.gati.revistaonline.infrastructure.hibernate;
+package br.com.fip.gati.revistaonline.infrastructure.persistence.hibernate;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
