@@ -5,6 +5,11 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.NotNull;
 
+/**
+ * 
+ * @author Emanuell Faustino
+ *
+ */
 @MappedSuperclass
 public class Entity {
 	
