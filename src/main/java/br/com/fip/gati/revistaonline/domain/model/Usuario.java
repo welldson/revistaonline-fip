@@ -1,4 +1,4 @@
-package br.com.fip.gati.revistaonline.model;
+package br.com.fip.gati.revistaonline.domain.model;
 
 import java.util.Date;
 
@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.br.CPF;
 
-@javax.persistence.Entity
+@javax.persistence.Entity(name="usuario")
 public class Usuario extends Entity {
 
 	@NotNull

@@ -5,7 +5,7 @@ import java.util.List;
 
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
-import br.com.fip.gati.revistaonline.model.Usuario;
+import br.com.fip.gati.revistaonline.domain.model.Usuario;
 import br.com.fip.gati.revistaonline.repositorio.UsuarioRepositorio;
 
 @Resource

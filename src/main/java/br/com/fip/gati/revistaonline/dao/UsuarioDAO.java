@@ -3,7 +3,7 @@ package br.com.fip.gati.revistaonline.dao;
 import org.hibernate.Session;
 
 import br.com.caelum.vraptor.ioc.Component;
-import br.com.fip.gati.revistaonline.model.Usuario;
+import br.com.fip.gati.revistaonline.domain.model.Usuario;
 import br.com.fip.gati.revistaonline.repositorio.UsuarioRepositorio;
 
 @Component
