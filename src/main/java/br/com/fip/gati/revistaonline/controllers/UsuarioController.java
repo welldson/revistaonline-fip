@@ -1,5 +1,6 @@
 package br.com.fip.gati.revistaonline.controllers;
 
+import java.util.Date;
 import java.util.List;
 
 import br.com.caelum.vraptor.Resource;
@@ -10,41 +11,42 @@ import br.com.fip.gati.revistaonline.repositorio.UsuarioRepositorio;
 @Resource
 public class UsuarioController {
 	
-	private final Result result;
 	private UsuarioRepositorio usuarioRepositorio;
+	private final Result result;
 
-	public UsuarioController(UsuarioRepositorio usuarioRepositorio, Result result) {
-		this.usuarioRepositorio = usuarioRepositorio;
+	public UsuarioController(UsuarioRepositorio usuarioRep, Result result) {
+		this.usuarioRepositorio = usuarioRep;
 		this.result = result;
 	}
 	
-	//o nome do metodo deve ser o nome da pagina .jsp
 	public void formulario() {
 		
 	}
 	
 	public void salvar(Usuario usuario) {
-		//EFETUAR VALIDAÇÕES NECESSARIAS
-		this.usuarioRepositorio.save(usuario); //aqui o usuário foi salvo
-		
-		//aqui estou informando que ao terminar esse metodo deve redirecionar para a pagina formulario.jsp
-		result.redirectTo(this).formulario(); 
+		//EFETUAR VALIDAÇÕES
+		usuario.setAlterarSenhaProximoAcesso(true);
+		usuario.setDtaCadastro(new Date());
+		usuario.setDtaUltimoAcesso(new Date());
+		usuario.setStatus("BLOQUEADO");
+		usuario.setTentativasLogon(0);
+		this.usuarioRepositorio.save(usuario);
+		result.redirectTo(this).formulario();
 	}
 	
 	public void atualizar(Usuario usuario) {
-		
+//		this.usuarioRepositorio.update(usuario);
 	}
 	
 	public Usuario editar() {
-		Usuario user = new Usuario();
-		return user;
+		return null;
 	}
 	
-	public void excluir() {
-		
+	public void excluir(Usuario usuario) {
+//		usuarioRepositorio.delete(usuario);
 	}
 	
 	public List<Usuario> listar() {
-		return null;
+		return usuarioRepositorio.listAll();
 	}
 }

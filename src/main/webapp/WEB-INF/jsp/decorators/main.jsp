@@ -15,11 +15,21 @@
     <decorator:head/>    
   </head>
   <body>
-		
+	HEADER
+	<br />
+	------
+	<br />
+	<br />
 	<!-- Paginas com os messages -->
 	<%-- <jsp:include page="../includes/messages.jsp" /> --%>
 	<!-- CONTEUDO -->
 	<decorator:body/>
+	
+	<br />
+	<br />
+	-----
+	<br />
+	FOOTER
 
 </body>
 </html>
