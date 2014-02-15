@@ -1,4 +1,4 @@
-package br.com.fip.gati.revistaonline.controllers;
+package br.com.fip.gati.revistaonline.resources.web.controllers;
 
 import java.util.Date;
 import java.util.List;
