@@ -3,6 +3,7 @@ package br.com.fip.gati.revistaonline.resources.web.controllers;
 import java.util.Date;
 import java.util.List;
 
+import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.com.fip.gati.revistaonline.domain.model.Usuario;
@@ -19,6 +20,7 @@ public class UsuarioController {
 		this.result = result;
 	}
 	
+	@Path("/cadastro")
 	public void formulario() {
 		
 	}
