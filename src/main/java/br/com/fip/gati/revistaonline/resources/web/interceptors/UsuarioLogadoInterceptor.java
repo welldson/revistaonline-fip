@@ -12,11 +12,11 @@ import br.com.fip.gati.revistaonline.resources.web.controllers.LoginController;
 
 @Intercepts
 @RequestScoped
-public class UserLoggedInterceptor implements Interceptor {
+public class UsuarioLogadoInterceptor implements Interceptor {
 	private UsuarioLogado usuarioLogado;
 	private Result result;
 	
-	public UserLoggedInterceptor(UsuarioLogado user, Result result) {
+	public UsuarioLogadoInterceptor(UsuarioLogado user, Result result) {
 		this.usuarioLogado = user;
 		this.result = result;
 	}
