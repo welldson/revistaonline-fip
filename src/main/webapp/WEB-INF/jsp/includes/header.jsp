@@ -15,50 +15,50 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="about.html">About</a>
+                    <li><a href="#">Sobre</a>
                     </li>
-                    <li><a href="services.html">Services</a>
+                    <li><a href="#">Services</a>
                     </li>
-                    <li><a href="contact.php">Contact</a>
+                    <li><a href="#">Contact</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            <li><a href="#">1 Column Portfolio</a>
                             </li>
-                            <li><a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            <li><a href="#">2 Column Portfolio</a>
                             </li>
-                            <li><a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            <li><a href="#">3 Column Portfolio</a>
                             </li>
-                            <li><a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            <li><a href="#">4 Column Portfolio</a>
                             </li>
-                            <li><a href="portfolio-item.html">Single Portfolio Item</a>
+                            <li><a href="#">Single Portfolio Item</a>
                             </li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="blog-home-1.html">Blog Home 1</a>
+                            <li><a href="#">Blog Home 1</a>
                             </li>
-                            <li><a href="blog-home-2.html">Blog Home 2</a>
+                            <li><a href="#">Blog Home 2</a>
                             </li>
-                            <li><a href="blog-post.html">Blog Post</a>
+                            <li><a href="#">Blog Post</a>
                             </li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="full-width.html">Full Width Page</a>
+                            <li><a href="#">Full Width Page</a>
                             </li>
-                            <li><a href="sidebar.html">Sidebar Page</a>
+                            <li><a href="#">Sidebar Page</a>
                             </li>
-                            <li><a href="faq.html">FAQ</a>
+                            <li><a href="#">FAQ</a>
                             </li>
-                            <li><a href="404.html">404</a>
+                            <li><a href="#">404</a>
                             </li>
-                            <li><a href="pricing.html">Pricing Table</a>
+                            <li><a href="#">Pricing Table</a>
                             </li>
                         </ul>
                     </li>
