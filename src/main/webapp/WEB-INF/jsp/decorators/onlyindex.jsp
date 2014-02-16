@@ -14,7 +14,7 @@
     <!-- Bootstrap core CSS -->
     <link href="${pageContext.request.contextPath}/resources/css/bootstrap.css" rel="stylesheet" />
     <link href="${pageContext.request.contextPath}/resources/css/bootstrap-theme.css" rel="stylesheet" />
-    
+
     <!-- Add custom CSS here -->
     <link href="${pageContext.request.contextPath}/resources/css/modern-business.css" rel="stylesheet" />
     <link href="${pageContext.request.contextPath}/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -22,20 +22,10 @@
     <decorator:head/>    
   </head>
   <body>
-  <c:if test="${usuarioLogado.logado}"> <a href="${linkTo[LoginController].logout}"> - Sair</a> </c:if>
-	<div id="erros">
-		<ul>
-			<c:forEach items="${errors}" var="error">
-				<li>${error.category } - ${error.message }</li>
-			</c:forEach>
-		</ul>
-	</div>
-	
-  	<div id="tudo">
-		<jsp:include page="../includes/header.jsp" />
-		<div style="clear: both;"></div>
-  		<div class="container" style="margin-top: 30px;">
+<!--   	<div id="tudo"> -->
+<!--   		<div class="container"> -->
   			
+			<jsp:include page="../includes/header.jsp" />
 			<jsp:include page="../includes/scripts.jsp" />
 
 			<!-- Paginas com os messages -->
@@ -44,7 +34,8 @@
 			<decorator:body />
 
 			<jsp:include page="../includes/footer.jsp" />
-		</div>
-	</div>
+<!-- 		</div> -->
+<!-- 	</div> -->
+
 </body>
 </html>

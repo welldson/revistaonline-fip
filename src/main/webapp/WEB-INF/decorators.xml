@@ -14,7 +14,7 @@
 <!--     	<pattern>/errors/*</pattern> -->
 	</excludes>
     
-<!--     <decorator name="login" page="login.jsp"> -->
-<!--     	<pattern>/login/index</pattern> -->
-<!--   	</decorator> -->
+    <decorator name="onlyindex" page="onlyindex.jsp">
+    	<pattern>/</pattern>
+  	</decorator>
 </decorators>
