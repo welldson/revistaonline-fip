@@ -15,7 +15,15 @@
     <decorator:head/>    
   </head>
   <body>
-	HEADER
+  	HEADER <c:if test="${usuarioLogado.logado}"> <a href="${linkTo[LoginController].logout}"> - Sair</a> </c:if>
+	<div id="erros">
+		<ul>
+			<c:forEach items="${errors}" var="error">
+				<li>${error.category } - ${error.message }</li>
+			</c:forEach>
+		</ul>
+	</div>
+
 	<br />
 	------
 	<br />

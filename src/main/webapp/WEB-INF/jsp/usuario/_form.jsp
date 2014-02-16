@@ -15,7 +15,7 @@
 
 <div>
 	<label>Cpf:</label>
-	<input type="text" name="usuario.cpf" placeholder="Cpf" value="${usuario.cpf}" />
+	<input type="text" name="usuario.cpf" placeholder="CPF" value="${usuario.cpf}" />
 </div>
 
 <div>
