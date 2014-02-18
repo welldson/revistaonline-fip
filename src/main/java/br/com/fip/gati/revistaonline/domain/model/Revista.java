@@ -3,7 +3,7 @@ package br.com.fip.gati.revistaonline.domain.model;
 
 
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+
 
 
 
@@ -11,43 +11,38 @@ import javax.validation.constraints.Size;
 public class Revista extends Entity{
 	
 	@NotNull
-	
 	private String nomeRevista;
 	
 	@NotNull
-	
 	private String areaDeAtuacao;
 	
 	@NotNull
-	
 	private String descricao;
 	
 	@NotNull
-	
 	private int edicao;
 	
 	
 	@NotNull
-	
-	private Long ISSN;
+	private Long issn;
 	
 	
 	@NotNull
+	private Long eissn;
 	
-	private Long eISSN;
 	
 	
-	public Long getISSN() {
-		return ISSN;
+	public Long getIssn() {
+		return issn;
 	}
-	public void setISSN(Long iSSN) {
-		ISSN = iSSN;
+	public void setIssn(Long issn) {
+		this.issn = issn;
 	}
-	public Long geteISSN() {
-		return eISSN;
+	public Long getEissn() {
+		return eissn;
 	}
-	public void seteISSN(Long eISSN) {
-		this.eISSN = eISSN;
+	public void setEissn(Long eissn) {
+		this.eissn = eissn;
 	}
 	public String getNomeRevista() {
 		return nomeRevista;

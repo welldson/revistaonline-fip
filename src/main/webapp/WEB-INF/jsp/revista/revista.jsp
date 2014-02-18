@@ -30,14 +30,14 @@
 <div class="row" >
 	<div class="form-group col-lg-3" >
 		<label>ISSN:</label>
-		<input type="text" class="form-control" name="revista.ISSN" placeholder="ISSN" value="${revista.ISSN}" />
+		<input type="text" class="form-control" name="revista.issn" placeholder="issn" value="${revista.issn}" />
 	</div>
 </div>
 
 <div class="row" >
 	<div class="form-group col-lg-3" >
 		<label>eISSN:</label>
-		<input type="text" class="form-control" name="revista.eISSN" placeholder="eISSN" value="${revista.eISSN}" />
+		<input type="text" class="form-control" name="revista.eissn" placeholder="eissn" value="${revista.eissn}" />
 	</div>
 </div>
 
