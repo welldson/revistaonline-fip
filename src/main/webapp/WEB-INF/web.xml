@@ -30,6 +30,17 @@
         	<param-name>br.com.caelum.vraptor.provider</param-name>
 	        <param-value>br.com.caelum.vraptor.ioc.guice.GuiceProvider</param-value>
     </context-param>-->
+    
+    <!-- i18n -->
+    <context-param>
+        <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+        <param-value>messages</param-value>
+    </context-param>
+    <context-param>  
+        <param-name>javax.servlet.jsp.jstl.fmt.locale</param-name>  
+        <param-value>pt_BR</param-value>  
+    </context-param>  
+    
     <filter>
 		<filter-name>sitemesh</filter-name>
 		<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
