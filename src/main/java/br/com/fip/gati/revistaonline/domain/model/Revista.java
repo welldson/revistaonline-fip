@@ -11,41 +11,42 @@ import javax.validation.constraints.Size;
 public class Revista extends Entity{
 	
 	@NotNull
-	@Size(min=5)
+	
 	private String nomeRevista;
 	
 	@NotNull
-	@Size(min=5)
+	
 	private String areaDeAtuacao;
 	
 	@NotNull
-	@Size(min=5)
+	
 	private String descricao;
 	
 	@NotNull
-	@Size(min=5)
+	
 	private int edicao;
 	
 	
 	@NotNull
-	@Size(min=5)
-	private long ISSN;
+	
+	private Long ISSN;
 	
 	
 	@NotNull
-	@Size(min=5)
-	private long eISSN;
 	
-	public long getISSN() {
+	private Long eISSN;
+	
+	
+	public Long getISSN() {
 		return ISSN;
 	}
-	public void setISSN(long iSSN) {
+	public void setISSN(Long iSSN) {
 		ISSN = iSSN;
 	}
-	public long geteISSN() {
+	public Long geteISSN() {
 		return eISSN;
 	}
-	public void seteISSN(long eISSN) {
+	public void seteISSN(Long eISSN) {
 		this.eISSN = eISSN;
 	}
 	public String getNomeRevista() {

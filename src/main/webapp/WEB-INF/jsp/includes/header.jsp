@@ -16,6 +16,7 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="${linkTo[UsuarioController].formulario}">Cadastro</a></li>
+                   
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Services</a>
                     </li>
