@@ -8,21 +8,29 @@
 <div class="row" >
 	<div class="form-group col-lg-3" >
 		<label>Area:</label>
-		<input type="text" class="form-control" name="revista.areaDeAtuacao" placeholder="areaDeAtuacao" value="${revista.areaDeAtuacao}" />
+		<input type="text" class="form-control" name="revista.areaDeAtuacao" placeholder="Area De Atuação" value="${revista.areaDeAtuacao}" />
 	</div>
 </div>
 
+
+
+
+
+
+
+
+
 <div class="row" >
-	<div class="form-group col-lg-3" >
+	<div class="form-group col-lg-3 " >
 		<label>Descrição:</label>
-		<input type="text" class="form-control" name="revista.descricao" placeholder="descricao" value="${revista.descricao}" />
+		<input type="text" class="form-control" name="revista.descricao" placeholder="descricão" value="${revista.descricao}" />
 	</div>	
 </div>
 
 <div class="row" >
 	<div class="form-group col-lg-3" >
 		<label>Edição:</label>
-		<input type="text" class="form-control" name="revista.edicao" placeholder="edicao" value="${revista.edicao}" />
+		<input type="text" class="form-control" name="revista.edicao" placeholder="edição" value="${revista.edicao}" />
 	</div>
 </div>
 

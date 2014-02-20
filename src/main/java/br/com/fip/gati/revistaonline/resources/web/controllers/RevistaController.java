@@ -28,7 +28,7 @@ public class RevistaController {
 
 	public void salvar(Revista revista) {
 		
-		revista.setStatus("BUDEGA");
+		revista.setStatus("Ativa");
 		this.revistaRepositorio.save(revista);
 
 		result.redirectTo(this).formularioRevista();
