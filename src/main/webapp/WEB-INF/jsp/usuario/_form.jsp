@@ -1,3 +1,9 @@
+<input type="hidden" name="usuario.id" value="${usuario.id}" />
+<input type="hidden" name="usuario.status" value="${usuario.status}" />
+<input type="hidden" name="usuario.dtaCadastro" value="<fmt:formatDate value="${usuario.dtaCadastro}" pattern="dd/MM/yyyy" />" />
+<input type="hidden" name="usuario.dtaUltimoAcesso" value="<fmt:formatDate value="${usuario.dtaUltimoAcesso}" pattern="dd/MM/yyyy" />" />
+<input type="hidden" name="usuario.tentativasLogon" value="${usuario.tentativasLogon}" />
+<input type="hidden" name="usuario.alterarSenhaProximoAcesso" value="${usuario.alterarSenhaProximoAcesso}" />
 <div class="row" >
 	<div class="form-group col-lg-3" >
 		<label>Nome:</label>

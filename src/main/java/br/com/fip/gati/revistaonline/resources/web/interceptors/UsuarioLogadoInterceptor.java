@@ -21,12 +21,13 @@ public class UsuarioLogadoInterceptor implements Interceptor {
 		this.result = result;
 	}
 
-	public boolean accepts(ResourceMethod arg0) {
-		return (!usuarioLogado.isLogado() && !arg0.getMethod().getDeclaringClass().equals(LoginController.class));
+	public boolean accepts(ResourceMethod method) {
+		return (!usuarioLogado.isLogado() && !method.getMethod().getDeclaringClass().equals(LoginController.class));
 	}
 
-	public void intercept(InterceptorStack arg0, ResourceMethod arg1, Object arg2) throws InterceptionException {
+	public void intercept(InterceptorStack stack, ResourceMethod method, Object obj) throws InterceptionException {
 		result.redirectTo(LoginController.class).login();
+		stack.next(method, obj);
 	}
 	
 }
