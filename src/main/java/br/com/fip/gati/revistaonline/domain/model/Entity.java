@@ -3,7 +3,6 @@ package br.com.fip.gati.revistaonline.domain.model;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
-import javax.validation.constraints.NotNull;
 
 /**
  * 
@@ -16,23 +15,12 @@ public class Entity {
 	@Id @GeneratedValue
 	private Long id;
 	
-	@NotNull
-	private String status;
-	
 	public void setId(Long id) {
 		this.id = id;
 	}
 
 	public Long getId() {
 		return id;
-	}
-	
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
 	}
 
 	@Override

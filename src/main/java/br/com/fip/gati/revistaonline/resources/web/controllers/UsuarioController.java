@@ -41,7 +41,7 @@ public class UsuarioController {
 		usuario.setAlterarSenhaProximoAcesso(false);
 		usuario.setDtaCadastro(new Date());
 		usuario.setDtaUltimoAcesso(new Date());
-		usuario.setStatus("BLOQUEADO");
+		usuario.setStatus("A");
 		usuario.setTentativasLogon(0);
 		this.usuarioRepositorio.save(usuario);
 		result.redirectTo(this).formulario();
@@ -69,7 +69,9 @@ public class UsuarioController {
 	
 	@Delete("/usuario/{usuario.id}")
 	public void excluir(Usuario usuario) {
-		
+		Usuario user = this.usuarioRepositorio.load(usuario.getId());
+		this.usuarioRepositorio.delete(user);
+		result.redirectTo(this).listar();
 	}
 	
 	@Get("/usuarios")

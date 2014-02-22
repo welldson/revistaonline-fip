@@ -9,6 +9,7 @@
 			<th>E-Mail</th>
 			<th>Login</th>
 			<th>Editar</th>
+			<th>Excluir</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -19,9 +20,16 @@
 			<td>${usuario.email}</td>
 			<td>${usuario.login}</td>
 			<td>
-				<a href="${linkTo[UsuarioController].editar[usuario]}">
-					Editar
+				<a class="btn btn-default" href="${linkTo[UsuarioController].editar[usuario]}">
+					<span class="glyphicon glyphicon-edit"></span>
 				</a>
+			</td>
+			<td>
+				<form action="${linkTo[UsuarioController].excluir[usuario]}" method="POST">
+					<button class="btn btn-default" name="_method" value="DELETE">
+						<span class="glyphicon glyphicon-remove-circle"></span>
+					</button>
+				</form>
 			</td>
 		</tr>
 	</c:forEach>
