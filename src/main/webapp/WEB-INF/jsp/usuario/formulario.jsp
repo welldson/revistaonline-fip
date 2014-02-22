@@ -1,5 +1,5 @@
 <div>
-	<form action="${linkTo[UsuarioController].salvar}">
+	<form action="${linkTo[UsuarioController].salvar}" method="POST">
 		<fieldset>
 			<legend>Cadastrar Usuário</legend>
 			<jsp:include page="_form.jsp"/>

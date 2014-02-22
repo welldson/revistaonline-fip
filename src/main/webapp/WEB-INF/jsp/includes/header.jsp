@@ -15,7 +15,17 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="${linkTo[UsuarioController].formulario}">Cadastro</a></li>
+                    <li>
+                    	<a href="#" class="dropdown-toggle" data-toggle="dropdown">CRUD Usuario <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                            	<a href="${linkTo[UsuarioController].formulario}">Cadastro</a>
+                            </li>
+                            <li>
+                            	<a href="${linkTo[UsuarioController].listar}">Listar</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Services</a>
                     </li>

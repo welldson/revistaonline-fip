@@ -14,35 +14,36 @@ import org.hibernate.validator.constraints.br.CPF;
 @Table(name="usuario")
 public class Usuario extends Entity {
 
-	@NotNull
 	private Integer tentativasLogon;
 	
-	@NotNull
-	@Size(min=11, max=14)
-	@CPF
+	@NotNull(message="{usuario.cpf.nulo}")
+	@Size(min=11, max=14, message="{usuario.cpf.tamanho}")
+	@CPF(message="{usuario.cpf.invalido}")
 	private String cpf;
 	
-	@NotNull
+	private String status;
+	
 	private Date dtaCadastro;
 	
 	private Date dtaUltimoAcesso;
 	
-	@NotNull
-	@Email
+	@NotNull(message="{usuario.email.nulo}")
+	@Email(message="{usuario.email.invalido}")
 	@Column(unique=true)
 	private String email;
 	
+	@NotNull(message="{usuario.senha.nulo}")
+	@Size(min=5, max=14, message="{usuario.senha.tamanho}")
 	private String senha;
 	
-	@NotNull
-	@Size(min=5)
+	@NotNull(message="{usuario.nome.nulo}")
+	@Size(min=5, message="{usuario.nome.tamanho}")
 	private String nome;
 	
-	@NotNull
 	private boolean alterarSenhaProximoAcesso;
 	
-	@NotNull
-	@Size(min=3, max=20)
+	@NotNull(message="{usuario.login.nulo}")
+	@Size(min=3, max=20, message="{usuario.login.tamanho}")
 	@Column(unique=true)
 	private String login;
 	
@@ -118,6 +119,14 @@ public class Usuario extends Entity {
 
 	public String getLogin() {
 		return login;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	
 }

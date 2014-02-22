@@ -35,7 +35,7 @@ public abstract class GenericDAO<T> implements Repositorio<T> {
 	}
 
 	@SuppressWarnings("unchecked")
-	public T load(int id) {
+	public T load(Long id) {
 		return (T) getCurrentSession().get(entityClass, id);
 	}
 
